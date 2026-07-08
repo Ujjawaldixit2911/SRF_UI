@@ -68,10 +68,10 @@ projects.forEach(project => {
   const src = path.join(__dirname, project, 'dist');
   const dest = path.join(distDir, project);
   if (fs.existsSync(src)) {
-    console.log(\`Copying \${project}/dist to dist/\${project}...\`);
+    console.log(`Copying ${project}/dist to dist/${project}...`);
     fs.cpSync(src, dest, { recursive: true });
   } else {
-    console.error(\`Warning: \${project}/dist not found. Did the build fail?\`);
+    console.error(`Warning: ${project}/dist not found. Did the build fail?`);
   }
 });
 
