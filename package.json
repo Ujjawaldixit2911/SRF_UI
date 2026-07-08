@@ -1,0 +1,15 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm --prefix customer-master install && npm --prefix design1 install && npm --prefix design2 install && npm --prefix design3 install && npm --prefix design4 install",
+    "build-all": "npm --prefix customer-master run build && npm --prefix design1 run build && npm --prefix design2 run build && npm --prefix design3 run build && npm --prefix design4 run build",
+    "build": "npm run install-all && npm run build-all && node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
